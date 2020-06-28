@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+                let abc=document.querySelectorAll(".vedio_text");
+                let arr=[];
+                abc.forEach(itm=>{
+
+                    let abb=itm.querySelectorAll("span")
+                abb.forEach(item=>{
+                    arr.push(item.innerText)
+                })
+                })
+                console.log(arr);
+    </script>
+
+</body>
+</html>
