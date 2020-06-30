@@ -11,8 +11,6 @@ $.ajax({
 class tme{
     constructor(data){
        this.data=data;
-       console.log(this.data);
-       
        this.Init();
        this.html=null;
     }
@@ -25,8 +23,6 @@ class tme{
         let str="";
         (this.data).forEach(item => {
                    for(let i=0;i<JSON.parse(item.day).length;i++){ 
-                    //    console.log(JSON.parse(item.day[i]));
-                       
                 str+=`
                     <li class="oli">
                     <strong class="s1">${JSON.parse(item.day)[i]}</strong>
@@ -36,14 +32,13 @@ class tme{
                    }
                    
                 });
-                oul.innerHTML=str;
+                $(".Ul").html(str);              
                 $(".oli").css({color: "#666",
                 padding: "8px 0 0 0",
                 cursor: "pointer",
                 width: "80px",
                height: "40px",
                display: "block",
-                // border: "1px solid red",
                 float:"left",
                 'text-align':"center"
             })
@@ -54,6 +49,14 @@ class tme{
                 width:"100%",
                 height: "20px"
             })
+            $(".Ul").css({
+                width: "806px",
+                height: "52px",
+                position: "absolute",
+                left: "16px",
+                overflow: "hidden"
+            })
+            // console.log($(".Ul"))
     }
 }
 // // new tme;

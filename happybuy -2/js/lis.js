@@ -1,0 +1,22 @@
+$(()=>{
+    $(".active").mousemove(()=>{
+        $(".two").css({
+            display:"block"
+        })
+    })
+    $(".active").mouseleave(()=>{
+        $(".two").css({
+            display:"none"
+        })
+    })
+    $(".two").mousemove(()=>{
+        $(".two_box").css({
+            display:"block"
+        })
+    })
+    $(".two").mouseleave(()=>{
+        $(".two_box").css({
+            display:"none"
+        })
+    })
+})
