@@ -7,6 +7,7 @@
     <script src="./js/data.js"></script>
     <script src="./js/list.js"></script>
     <script src="./js/lis.js"></script>
+    <script src="./js/login.js"></script>
     <link rel="stylesheet" href="./icon/iconfont.css">
     <link rel="stylesheet" href="./css/happybuy.css">
 </head>
@@ -50,8 +51,8 @@
             <div class="header-cont">
                 <div class="header-l">
                     <span>欢迎来到快乐购！</span>
-                    <a href="#">[登录]</a>
-                    <a href="#">[免费注册]</a>
+                    <a href="#" class="sign">[登录]</a>
+                    <a href="#" class="register">[免费注册]</a>
                 </div>
                 <div class="header-r">
                     <ul class="list">
@@ -123,7 +124,7 @@
         <div class="lis">
             <div class="lis-cont">
                     <li class="active lis"> 所有分类<i class="iconfont icon-gengduo1"></i>
-                        <ul>
+                        <ul class="al">
                             <li class="two">个护美妆 >
                                <div class="two_box">
                                    <ul class="two-box">
@@ -202,32 +203,319 @@
                                 </ul>
                                </div>
                             </li>
-                            <li class="two">食品健康 >
-                                <!-- <div>
-                                    <li>
-                                        <h3>香水彩妆 ></h3>
-                                        <li>唇膏唇彩</li>
-                                        <li>遮瑕</li>
-                                        <li>粉底粉饼</li>
-                                        <li>睫毛膏</li>
-                                        <li>眉笔</li>
-                                        <li>眼影/眼线</li>
-                                        <li>彩妆工具</li>
-                                        <li>卸妆</li>
-                                        <li>女士香水</li>
+                            <li class="tWo">食品健康 >
+                                <div class="two_Box">
+                                    <ul class="two-box">
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>地方特产 ></h3>
+                                         <li><a href="#">农贸产品</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>饮料冲调 ></h3>
+                                         <li><a href="#">牛奶/酸奶</a></li>
+                                         <li><a href="#">麦片/代餐粉</a></li>
+                                         <li><a href="#">蜂蜜</a></li>
+                                         <li><a href="#">冲调饮品</a></li>
+                                         <li><a href="#">红糖/黑糖</a></li>
+                                         <li><a href="#">咖啡</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>粮油调味 ></h3>
+                                         <li><a href="#">米面</a></li>
+                                         <li><a href="#">五谷</a></li>
+                                         <li><a href="#">食用油</a></li>
+                                         <li><a href="#">速食食品</a></li>
+                                         <li><a href="#">南北干货</a></li>
+                                         <li><a href="#">调料</a></li>
+                                         <li><a href="#">腊味</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>酒水茗茶 ></h3>
+                                         <li><a href="#">白酒</a></li>
+                                         <li><a href="#">进口红酒</a></li>
+                                         <li><a href="#">国产红酒</a></li>
+                                         <li><a href="#">啤酒</a></li>
+                                         <li><a href="#">黑茶/普洱</a></li>
+                                         <li><a href="#">红茶/绿茶</a></li>
+                                         <li><a href="#">花草茶</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>休闲食品 ></h3>
+                                         <li><a href="#">坚果/果干</a></li>
+                                         <li><a href="#">饼干糕点</a></li>
+                                         <li><a href="#">糖果/巧克力</a></li>
+                                         <li><a href="#">零食</a></li>
+                                         <li><a href="#">麻辣零食</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>营养保健 ></h3>
+                                         <li><a href="#">红枣/枸杞</a></li>
+                                         <li><a href="#">女性保养</a></li>
+                                         <li><a href="#">阿胶/燕窝</a></li>
+                                         <li><a href="#">传统滋补</a></li>
+                                         <li><a href="#">基础保健</a></li>
+                                         <li><a href="#">瘦身/酵素</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                        <ul>
+                                        <h3>生鲜食品 ></h3>
+                                        <li><a href="#">新鲜果蔬</a></li>
+                                        <li><a href="#">肉类</a></li>
+                                        <li><a href="#">家禽蛋类</a></li>
+                                        <li><a href="#">大闸蟹</a></li>
+                                        <li><a href="#">生鲜水产</a></li>
+                                    </ul>
                                     </li>
-                               </div> -->
+                                 </ul>
+                                </div>
                             </li>
-                            <li class="two">餐厨日用 >
+                            <li class="twO">餐厨日用 >
+                                <div class="two_bOx">
+                                    <ul class="two-box">
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>厨房电器 ></h3>
+                                         <li><a href="#">保温板</a></li>
+                                         <li><a href="#">净水设备</a></li>
+                                         <li><a href="#">烤箱/微波炉</a></li>
+                                         <li><a href="#">电饭煲</a></li>
+                                         <li><a href="#">电压力/电蒸锅</a></li>
+                                         <li><a href="#">炉具</a></li>
+                                         <li><a href="#">榨汁/原汁机</a></li>
+                                         <li><a href="#">料理/研磨机</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>健康保健 ></h3>
+                                         <li><a href="#">健身用品</a></li>
+                                         <li><a href="#">保健按摩</a></li>
+                                         <li><a href="#">运动电子</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>烹饪锅具 ></h3>
+                                         <li><a href="#">透明锅</a></li>
+                                         <li><a href="#">炒锅/煎锅</a></li>
+                                         <li><a href="#">汤锅/奶锅</a></li>
+                                         <li><a href="#">大牌锅具</a></li>
+                                         <li><a href="#">高速快锅</a></li>
+                                         <li><a href="#">煲</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>清洁收纳 ></h3>
+                                         <li><a href="#">清洁用品</a></li>
+                                         <li><a href="#">收纳用品</a></li>
+                                         <li><a href="#">晾晒置物</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>厨房用具 ></h3>
+                                         <li><a href="#">刀</a></li>
+                                         <li><a href="#">砧板/托盘</a></li>
+                                         <li><a href="#">保鲜盒/罐</a></li>
+                                         <li><a href="#">米箱</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>生活用品 ></h3>
+                                         <li><a href="#">个人清洁</a></li>
+                                         <li><a href="#">厨房用品</a></li>
+                                         <li><a href="#">日常用品</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                        <ul>
+                                        <h3>餐饮用具 ></h3>
+                                        <li><a href="#">碟碗</a></li>
+                                        <li><a href="#">筷勺/刀叉</a></li>
+                                        <li><a href="#">运动水杯</a></li>
+                                        <li><a href="#">保温水壶</a></li>
+                                        <li><a href="#">闷烧罐</a></li>
+                                        <li><a href="#">杯子</a></li>
+                                    </ul>
+                                    </li>
+                                 </ul>
+                                </div>
                             </li>
-                            <li class="two">服装配饰 ></li>
-                            <li class="two">布艺家纺 ></li>
-                            <li class="two">家电数码 ></li>
-                            <li class="two">品牌馆 ></li>
+                            <li class="Two">服装配饰 >
+                                 <div class="two_boX">
+                                    <ul class="two-box">
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>女士服装 ></h3>
+                                         <li><a href="#">上衣</a></li>
+                                         <li><a href="#">裙装</a></li>
+                                         <li><a href="#">裤装</a></li>
+                                         <li><a href="#">外套</a></li>
+                                         <li><a href="#">羽绒/羊绒</a></li>
+                                         <li><a href="#">皮草/大衣</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>男士服装 ></h3>
+                                         <li><a href="#">上衣</a></li>
+                                         <li><a href="#">下装</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>内衣 ></h3>
+                                         <li><a href="#">文胸</a></li>
+                                         <li><a href="#">内裤</a></li>
+                                         <li><a href="#">裤袜</a></li>
+                                         <li><a href="#">家居服</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>鞋靴 ></h3>
+                                         <li><a href="#">男鞋</a></li>
+                                         <li><a href="#">女鞋</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>箱包 ></h3>
+                                         <li><a href="#">旅行箱</a></li>
+                                         <li><a href="#">双肩包</a></li>
+                                         <li><a href="#">单肩包</a></li>
+                                         <li><a href="#">钱包</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>眼镜配饰 ></h3>
+                                         <li><a href="#">眼镜</a></li>
+                                         <li><a href="#">配饰</a></li>
+                                         <li><a href="#">其他</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                        <ul>
+                                        <h3>运动户外 ></h3>
+                                        <li><a href="#">运动服饰</a></li>
+                                        <li><a href="#">泳衣</a></li>
+                                        <li><a href="#">其他</a></li>
+                                    </ul>
+                                    </li>
+                                    <li class="two_smallbox">
+                                        <ul>
+                                        <h3>钟表 ></h3>
+                                        <li><a href="#">男表</a></li>
+                                        <li><a href="#">女表</a></li>   
+                                    </ul>
+                                    </li>
+                                 </ul>
+                                </div>
+                            </li>
+                            <li class="TWo">布艺家纺 >
+                                <div class="two_BOx">
+                                    <ul class="two-box">
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>床品套件 ></h3>
+                                         <li><a href="#">枕头</a></li>
+                                         <li><a href="#">套件</a></li>
+                                         <li><a href="#">杯子</a></li>
+                                         <li><a href="#">床垫/床套</a></li>
+                                         <li><a href="#">薄被毯子</a></li>
+                                         <li><a href="#">凉席</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>布艺软饰 ></h3>
+                                         <li><a href="#">窗帘</a></li>
+                                         <li><a href="#">地垫</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>抱枕靠垫 ></h3>
+                                         <li><a href="#">抱枕</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>毛巾浴巾 ></h3>
+                                         <li><a href="#">毛巾</a></li>
+                                         <li><a href="#">浴巾</a></li>
+                                     </ul>
+                                     </li>
+                                 </ul>
+                                </div>
+                            </li>
+                            <li class="TWO">家电数码 >
+                                <div class="two_BOX">
+                                    <ul class="two-box">
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>生活家电 ></h3>
+                                         <li><a href="#">冷暖家电</a></li>
+                                         <li><a href="#">清洁电器</a></li>
+                                         <li><a href="#">照明电器</a></li>
+                                         <li><a href="#">净化加湿器</a></li>
+                                         <li><a href="#">健康电器</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>大家电 ></h3>
+                                         <li><a href="#">冰箱空调</a></li>
+                                         <li><a href="#">洗衣机</a></li>
+                                         <li><a href="#">电视机</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>手机通讯 ></h3>
+                                         <li><a href="#">智能手机</a></li>
+                                         <li><a href="#">耳机音箱</a></li>
+                                         <li><a href="#">数码配件</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>鞋靴 ></h3>
+                                         <li><a href="#">男鞋</a></li>
+                                         <li><a href="#">女鞋</a></li>
+                                     </ul>
+                                     </li>
+                                     <li class="two_smallbox">
+                                         <ul>
+                                         <h3>电脑影音 ></h3>
+                                         <li><a href="#">电脑</a></li>
+                                         <li><a href="#">音响</a></li>
+                                         <li><a href="#">电脑配件</a></li>
+                                     </ul>
+                                     </li>
+                                 </ul>
+                                </div>
+                            </li>
+                            <li class="twoo">品牌馆 ></li>
                         </ul>
                     </li>
-                    <li class="lis">TV精选</li>
-                    <li class="lis">商品推荐</li>
+                    <li class="lis selected">TV精选</li>
+                    <li class="lis commodity">商品推荐</li>
             </div>
         </div>
         <div class="data">

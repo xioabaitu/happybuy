@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>快乐购商城-用户注册</title>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/captcha.js"></script>
+    <script src="./js/md5.js"></script>
+    <script src="./js/registor.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div id="box">
+        <div id="header">
+            <header>
+                <div class="pic">
+                    <a href="happybuy.html">
+                        <img src="https://ecimg.happigo.com/resource/web/images/logo.jpg" alt="">
+                    </a>
+                </div>
+                <div class="Link">
+                    <span>
+                        <img src="https://ecimg.happigo.com/resource/web/images/top_center.jpg" alt="">
+                    </span>
+                </div>
+            </header>
+        </div>
+            <article>
+                <section>
+                    <div class="head">
+                        <h2>用户注册</h2>
+                        <div class="lin">
+                            已有账号
+                            <a href="login.html" class="log">点击登录</a>
+                        </div>
+                    </div>
+                    <div id="fm">
+                        <input type="text" placeholder="请输入手机号" id="phone">
+                        <span class="ph"></span>
+                        <input type="password" placeholder="请输入密码" id="pwd">
+                        <span class="mi"></span>
+                        <input type="password" placeholder="请再次输入密码" id="pdw">
+                        <span class="ag"></span>
+                        <input type="text" placeholder="验证码" id="verification">
+                        <div class="image-code-box">
+                            <canvas width="150" height="43" id="captcha"></canvas>
+                        </div>
+                        <span class="yz"></span>
+                        <button id="btn">立即注册</button>
+                        <div class="tk">
+                            <input type="checkbox" id="ck">注册即表示同意快乐购
+                            <a href="https://www.happigo.com/news-7.htm">《用户服务协议》</a>
+                            条款
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <footer>
+                <div class="cont">
+                    <p>
+                        <span>Copyright© 2006-2019 happigo. All Rights Reserved </span>
+                        免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800 <br>
+                        湘ICP备19013404号-2
+                    </p>
+                    <p>
+                        <a href="#">
+                            <img src="https://ecimg.happigo.com/resource/web/images/foot_img3.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://ecimg.happigo.com/resource/web/images/foot_img4.png" alt="">
+                        </a>
+                    </p>
+                </div>
+            </footer>
+           
+    </div>
+</body>
+</html>

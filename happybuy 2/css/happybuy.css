@@ -308,6 +308,7 @@ img{
     margin: 0 auto;
 }
 .lis-cont .lis{
+    display: block;
     float: left;
     line-height: 42px;
     width: 170px;
@@ -682,17 +683,16 @@ img{
 }
 .lis-cont>li>ul{
     position: relative;
-    /* display: none; */
+    display: none;
     z-index: 100;
 }
-.two{
+.lis-cont>li>ul>li{
     position: relative;
     width: 170px;
     height: 42px;
     text-align: center;
     background-color: red;
     border-top:1px solid #c8c8c8 ;
-    display: none;
 }
 .two_box{
     width: 800px;
@@ -700,9 +700,59 @@ img{
     z-index: 20;
     background-color: white;
     position: absolute;
+    overflow: auto;
     left: 170px;
     top: 0;
-    display: none;
+}
+.two_Box{
+    width: 800px;
+    height: 300px;
+    z-index: 20;
+    background-color: white;
+    position: absolute;
+    overflow: auto;
+    left: 170px;
+    top: -40px;
+}
+.two_boX{
+    width: 800px;
+    height: 300px;
+    z-index: 20;
+    background-color: white;
+    position: absolute;
+    overflow: auto;
+    left: 170px;
+    top: -128px;
+}
+.two_BOx{
+    width: 800px;
+    height: 300px;
+    z-index: 20;
+    background-color: white;
+    position: absolute;
+    overflow-y: auto;
+    left: 170px;
+    top: -170px;
+}
+.two_BOX{
+    width: 800px;
+    height: 300px;
+    z-index: 20;
+    background-color: white;
+    position: absolute;
+    overflow-y: auto;
+    left: 170px;
+    top: -212px;
+}
+.two_bOx{
+    width: 800px;
+    height: 300px;
+    z-index: 20;
+    background-color: white;
+    position: absolute;
+    overflow: auto;
+    left: 170px;
+    top: -84px;
 }
 .two_smallbox{
     width: 800px;
@@ -716,21 +766,27 @@ img{
 }
 .two_smallbox ul{
     width: 750px;
-    height: 50px;
+    height: 40px;
     display: block;
     margin-left: 20px;
     border-bottom: 1px dashed #c8c8c8;
 }
 .two_smallbox ul li{
     float: left;
-    line-height: 50px;
+    line-height: 40px;
     /* text-align: center; */
     display: block;
     margin-left: 20px;
 }
 .two_smallbox h3{
     color: black;
-    line-height: 50px;
+    line-height: 40px;
     font-weight: normal;
+    font-size: 14px;
     float: left;
+}
+.selected{
+    font-weight: bolder;
+    color: red;
+    font-size: 26px;
 }
