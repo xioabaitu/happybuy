@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>快乐购</title>
     <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/md5.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/list.js"></script>
     <script src="./js/lis.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/xiangqing.js"></script>
     <link rel="stylesheet" href="./icon/iconfont.css">
     <link rel="stylesheet" href="./css/happybuy.css">
 </head>
@@ -19,7 +21,21 @@
                     <div class="user">
                         <a href="#">
                             <i class="iconfont icon-daohanglan-05"></i>
-                        <div class="use">账号</div>
+                        <div class="use sig">账号</div>
+                        <div class="login">
+                            <div class="login-cont">
+                                <h2>欢迎来到快乐购！</h2>
+                            </div>
+                            <div class="login-lis">
+                                <input type="text" placeholder="已验证的手机号" id="phone">
+                                <span class="ph"></span>
+                                <input type="password" placeholder="请输入密码" id="pwd">
+                                <span class="mi"></span>
+                                <button id="btn">立即登录</button>
+                                <a href="register.html">立即注册</a>
+                            </div>
+
+                        </div>
                     </a>
                     <div class="line">
                         <span class="line1"></span>
@@ -51,8 +67,10 @@
             <div class="header-cont">
                 <div class="header-l">
                     <span>欢迎来到快乐购！</span>
-                    <a href="#" class="sign">[登录]</a>
-                    <a href="#" class="register">[免费注册]</a>
+                    <span class="information">
+                        <a href="login.html" class="sign">[登录]</a>
+                        <a href="register.html" class="register">[免费注册]</a>
+                    </span>
                 </div>
                 <div class="header-r">
                     <ul class="list">
@@ -74,7 +92,7 @@
         <div id="top">
             <div class="top-cont">
                 <div class="logo">
-                    <a href="#">
+                    <a href="happybuy.html">
                         <img src="https://ecimg.happigo.com/resource/web/new_web/images/logo.png" alt="">
                     </a>
                 </div>

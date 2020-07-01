@@ -50,7 +50,7 @@ class tme{
                 height: "20px"
             })
             $(".Ul").css({
-                width: "806px",
+                width: "830px",
                 height: "52px",
                 position: "absolute",
                 left: "16px",

@@ -81,16 +81,6 @@ $(()=>{
 
                     }
                 })
-                // let xhr = new XMLHttpRequest;
-                // xhr.open("POST", "./php/registor.php");
-                // xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                // xhr.send(data);
-                // xhr.onload=function(){
-                //     if(xhr.status==200){
-                //         alert("注册成功!");
-                //         // location.href="login.html";
-                //     }
-                // }
             }
         }else{
             alert("请勾选条款")

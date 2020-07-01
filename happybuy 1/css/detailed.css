@@ -1,0 +1,126 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+#bgbox{
+    width: 1200px;
+    height: 800px;
+    margin: 30px auto;
+}
+.box_L{
+    float: left;
+    width: 380px;
+    height: 380px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+.box_L img{
+    width: 100%;
+    height: 100%;
+}
+.box_R{
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 450px;
+    height: 450px;
+}
+.box_R h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+.box_R h3{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    color: red;
+}
+.happy{
+    width: 520px;
+    height: 62px;
+    border-bottom: 1px dashed #ccc;
+}
+ em{
+    line-height: 62px;
+    font-size: 14px;
+    font-style: normal;
+    color: #666;
+}
+.happy span{
+    font-size: 40px;
+    color: red;
+    margin-left: 30px;
+}
+.yf span{
+    font-size: 14px;
+    margin-left: 30px;
+}
+.yf{
+    width: 520px;
+    height: 62px;
+    border-bottom: 1px dashed #ccc;
+}
+.Color span{
+    display: inline-block;
+        width: 62px;
+        height: 30px;
+        border: 2px solid red;
+        margin-left: 30px;
+        text-align: center;
+        line-height: 30px;
+}
+.Size span{
+    display: inline-block;
+        width: 62px;
+        height: 30px;
+        border: 2px solid red;
+        margin-left: 30px;
+        text-align: center;
+        line-height: 30px;
+}
+.Num_N{
+    display: inline-block;
+    margin-left: 30px;
+}
+.Num_N span{
+    text-align: center;
+    font-size: 40px;
+    line-height: 28px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    color: #999;
+    border: 1px solid #999;
+    box-shadow: 10px 10px 40px #000;
+}
+.Num_N input{
+    box-shadow: 10px 30px 10px #ccc;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    line-height: 20px;
+    width: 60px;
+    height: 34px;
+}
+input:focus{
+    outline:none;
+}
+.Btn :nth-child(1){
+    color: white;
+    width: 140px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    font-size: 16px;
+}
+.Btn{
+    margin-top: 15px;
+}
+.Btn :nth-child(2){
+    width: 140px;
+    height: 40px;
+    border: 2px solid red;
+    color: red;
+    font-size: 16px;
+    margin-left: 10px;
+}

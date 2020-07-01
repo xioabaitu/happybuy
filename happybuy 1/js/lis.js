@@ -126,9 +126,6 @@ $(()=>{
             color:"black"
         })
     })
-    $(".register").mousedown(()=>{
-       location.href("register.html");
-    })
     $(".register").mousemove(()=>{
         $(".register").css({
             color:"red"
@@ -137,6 +134,16 @@ $(()=>{
     $(".register").mouseleave(()=>{
         $(".register").css({
             color:"black"
+        })
+    })
+    $(".user").mousemove(()=>{
+        $(".login").css({
+            display:"block",
+        })
+    })
+    $(".login").mouseleave(()=>{
+        $(".login").css({
+            display:"none",
         })
     })
 })

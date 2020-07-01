@@ -32,6 +32,10 @@ img{
     _bottom: auto;
     min-height: 600px;
 }
+.sig{
+    word-break:break-all;
+    font-size: 12px;
+}
 .help-a{
     position: relative;
     height: 100%;
@@ -115,7 +119,7 @@ img{
     /* background-color: #ccc; */
 }
 .header-l{
-    width: 200px;
+    width: 250px;
     height: 100%;
     float: left;
     font-size: 12px;
@@ -410,21 +414,23 @@ img{
     width: 1200px;
 }
 .shop{
-    padding-top:20px ;
+    box-sizing: border-box;
+    margin:20px 0;
     width: 262px;
     height: 354px;
     float: left;
     margin-right: 13px;
     display: block;
+    box-shadow:10px 10px 20px #ccc;
 }
 .shop .pic{
     width: 262px;
     height: 262px;
 }
 .shop .pic img{
-    width: 100%;
-    height: 100%;
     display: block;
+    width: 256px;
+    height: 100%;
 }
 .shop p{
     height: 1.2em;
@@ -789,4 +795,54 @@ img{
     font-weight: bolder;
     color: red;
     font-size: 26px;
+}
+.user .login{
+    position: absolute;
+    top: 0;
+    right: 45px;
+    width: 250px;
+    height: 260px;
+    background: white;
+    box-shadow: -10px 10px 10px #8c8c8c;
+}
+.login{
+    display: none;
+}
+.login-cont{
+    width: 200px;
+    height: 20px;
+    margin: 10px auto;
+}
+.login h2{
+    font-size: 16px;
+    float: left;
+    color: red;
+}
+.login-lis{
+    width: 200px;
+    height: 240px;
+    margin: 0 auto;
+}
+.login-lis input{
+    width: 200px;
+    height: 30px;
+    margin: 10px auto;
+}
+.login-lis span{
+    float: left;
+    font-size: 12px;
+    color: #df0010;
+}
+.login-lis button{
+    width: 200px;
+    height: 30px;
+    background: red;
+    border: 0;
+    color: white;
+}
+.login-lis a{
+    text-decoration: none;
+    color: #8c8c8c;
+    font-size: 14px;
+    float: right;
 }
