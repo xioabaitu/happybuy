@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快乐购-购物车</title>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/lis.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/buy.js"></script>
+    <link rel="stylesheet" href="./css/buy.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="./css/happybuy.css">
+    <link rel="stylesheet" href="./css/detailed.css">
+</head>
+<body>
+    <div id="bigbox">
+        <div class="help">
+            <div class="help-a">
+                <div class="help-top">
+                    <div class="user">
+                        <a href="#">
+                            <i class="iconfont icon-daohanglan-05"></i>
+                        <div class="use sig">账号</div>
+                        <div class="login">
+                            <div class="login-cont">
+                                <h2>欢迎来到快乐购！</h2>
+                            </div>
+                            <div class="login-lis">
+                                <input type="text" placeholder="已验证的手机号" id="phone">
+                                <span class="ph"></span>
+                                <input type="password" placeholder="请输入密码" id="pwd">
+                                <span class="mi"></span>
+                                <button id="btn">立即登录</button>
+                                <a href="register.html">立即注册</a>
+                            </div>
+
+                        </div>
+                    </a>
+                    <div class="line">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div>
+                    </div>
+                    <div class="buy">
+                        <a href="#">
+                            <div class="use-a">购物车</div>
+                            <div class="num">0</div>
+                        </a>
+                        <div class="line">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="Collect">
+                        <div class="user">
+                            <a href="#">
+                            <div class="use">收藏</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="help-bottom"></div>
+            </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-cont">
+                <div class="header-l">
+                    <span>欢迎来到快乐购！</span>
+                    <span class="information">
+                        <a href="login.html" class="sign">[登录]</a>
+                        <a href="register.html" class="register">[免费注册]</a>
+                    </span>
+                </div>
+                <div class="header-r">
+                    <ul class="list">
+                        <li><a href="#">合作招商</a></li>
+                        <li><a href="#">订单查询</a></li>
+                        <li><a href="#">我的快乐购</a></li>
+                        <li><a href="#">下载快乐购app</a></li>
+                        <li class="list-d"><a href="#">客服中心</a>
+                            <ul class="list-ul">
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">会员反馈</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">400-705-1111</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="top">
+            <div class="top-cont">
+                <div class="logo">
+                    <a href="happybuy.html" class="CLea">
+                        <img src="https://ecimg.happigo.com/resource/web/new_web/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div id="shopbuy">
+            <div class="shop_tit">
+                <div class="shop_cart">
+                    <lable class="shop_djj ">
+                        <input type="checkbox" id="shop_cbox">
+                        <span>全选</span>
+                    </lable>
+                    <span class="shop_name">商品</span>
+                </div>
+                <div class="t_price">单价</div>
+                <div class="t_num">数量</div>
+                <div class="t_sum">小计(元)</div>
+                <div class="t_action">操作</div>
+            </div>
+            <div class="shop_h2">
+                <span class="s_allgoods">
+                    <input type="checkbox">
+                </span>
+                <span class="shop_h2_zy">
+                    <span>自营</span>
+                </span>
+                <a href="#" class="a_shopname">快乐购</a>
+                <div class="order_tips ">
+                    在线支付满129.00包邮
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label>
+                        <input type="cheakbox">
+                        <span>全选</span>
+                    </label>
+                </div>
+                <div>
+                    <div>
+                        已选商品
+                        <span>
+                            <em></em>
+                        </span>>
+                        件
+                    </div>
+                    <div>
+                        <p>
+                            商品总价（不含运费）
+                            <span>
+                                ￥<em></em>
+                            </span>
+                        </p>
+                    </div>
+                    <div>
+                        <a>结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <div class="foot_cont">
+                <div class="foot_li">
+                    <i></i>
+                    <p class="p1">成功上市</p>
+                    <p class="p2">股票代码300413</p>
+                </div>
+                <div class="foot_li">
+                    <i></i>
+                    <p class="p1">快乐购严选</p>
+                    <p class="p2">正品行货 品质保证</p>
+                </div>
+                <div class="foot_li">
+                    <i></i>
+                    <p class="p1">15天无理由退款</p>
+                    <p class="p2">为您提供售后无忧服务</p>
+                </div>
+                <div class="foot_li">
+                    <i></i>
+                    <p class="p1">满129包邮</p>
+                    <p class="p2">在线支付 购物包邮</p>
+                </div>
+                <div class="foot_li">
+                    <i></i>
+                    <p class="p1">24小时微笑服务</p>
+                    <p class="p2">365*24小时人工服务</p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="middle_cont">
+                    <ul>
+                        <li class="middle_li">
+                            <ul>
+                                <h3>使用帮助</h3>
+                                <li><a href="#">税费收取规则</a></li>
+                                <li><a href="#">新手指南</a></li>
+                                <li><a href="#">常见问题</a></li>
+                                <li><a href="#">用户协议</a></li>
+                            </ul>
+                        </li>
+                        <li class="middle_li">
+                            <ul>
+                                <h3>会员服务</h3>
+                                <li><a href="#">快乐币政策</a></li>
+                                <li><a href="#">会员权益</a></li>
+                                <li><a href="#">会员等级</a></li>
+                            </ul>
+                        </li>
+                        <li class="middle_li">
+                            <ul>
+                                <h3>支付方式</h3>
+                                <li><a href="#">快乐币支付</a></li>
+                                <li><a href="#">货到付款</a></li>
+                                <li><a href="#">在线支付</a></li>
+                                <li><a href="#">优惠券支付</a></li>
+                            </ul>
+                        </li>
+                        <li class="middle_li">
+                            <ul>
+                                <h3>配送方式</h3>
+                                <li><a href="#">费用说明</a></li>
+                                <li><a href="#">配送说明</a></li>
+                                <li><a href="#">包邮政策</a></li>
+                            </ul>
+                        </li>
+                        <li class="middle_li">
+                            <ul>
+                                <h3>售后服务</h3>
+                                <li><a href="">电子发票</a></li>
+                                <li><a href="">退货办理</a></li>
+                                <li><a href="">退货政策</a></li>
+                                <li><a href="">售后咨询</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="middle_r">
+                    <ul>
+                        <li>
+                            <h2>手机快乐购</h2>
+                            <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_01.png" alt="">
+                            <p>下载移动客户端</p>
+                        </li>
+                        <li>
+                            <h2>快乐购微信</h2>
+                            <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_02.png" alt="">
+                            <p>快乐购微信</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="end">
+                <div class="end_head">
+                    <ul>
+                        <li>
+                            <a href="#">关于快乐购</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="#">投资者关系</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="#">自营品牌招商</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="#">营业证照</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="end_foot">
+                    <p>
+                        <span>Copyright© 2006-2018 happigo. All Rights Reserved</span>
+                    </p>
+                    <p>
+                        免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+                        <span>E-Mail: service@happigo.com</span><br>
+                        <a href="#">湘ICP备19013404号-2</a>
+                        <img src="//ecimg.happigo.com/resource/web/images/jh.png" alt="">
+                        <a href="#">湘公网安备 43010502000556号</a>
+                        <a href="#">食品经营许可证 JY14301000273760</a>
+                    </p>
+                    <p class="end_end">
+                        <a href="#">
+                            <img src="//v.trustutn.org/images/cert/brand_bottom_small.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="//ecimg.happigo.com/resource/web/images/footer_shuidi.png" alt="">
+                        </a>
+                    </p>
+                </div>
+                <div class="wr"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

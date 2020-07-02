@@ -2,18 +2,42 @@
 *{
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 #bgbox{
     width: 1200px;
-    height: 800px;
+    height: 500px;
     margin: 30px auto;
+    position: relative;
 }
+.b_box{
+    position: absolute;
+    left:410px;
+    width: 380px;
+    height: 380px;
+    display: none;
+    overflow: hidden;
+    background-color: red;
+}
+.b_box img{
+    width: 1060px;height: 1060px;
+    position: absolute;
+    left:0;top:0;
+}
+
 .box_L{
     float: left;
     width: 380px;
     height: 380px;
     box-shadow: 10px 10px 5px #ccc;
 }
+.box_L span{
+    position: absolute;
+    left: 0;top:0;
+    background:rgba(200,200,200,0.4);
+    display: none;
+}
+
 .box_L img{
     width: 100%;
     height: 100%;
@@ -92,6 +116,7 @@
     color: #999;
     border: 1px solid #999;
     box-shadow: 10px 10px 40px #000;
+    cursor: pointer;
 }
 .Num_N input{
     box-shadow: 10px 30px 10px #ccc;

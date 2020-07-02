@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>快乐购</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/md5.js"></script>
-    <script src="./js/data.js"></script>
-    <script src="./js/list.js"></script>
     <script src="./js/lis.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/xiangqing.js"></script>
     <link rel="stylesheet" href="./icon/iconfont.css">
     <link rel="stylesheet" href="./css/happybuy.css">
+    <link rel="stylesheet" href="./css/detailed.css">
 </head>
 <body>
     <div id="bigbox">
@@ -92,7 +92,7 @@
         <div id="top">
             <div class="top-cont">
                 <div class="logo">
-                    <a href="happybuy.html">
+                    <a href="happybuy.html" class="CLea">
                         <img src="https://ecimg.happigo.com/resource/web/new_web/images/logo.png" alt="">
                     </a>
                 </div>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="buycar">
                    <a href="#">
-                       <span class="iconfont icon-gongjiaokeche">购物车</span>
+                       <span class="iconfont icon-gongjiaokeche" id="buy">购物车</span>
                    </a>
                 </div>
             </div>
@@ -536,193 +536,8 @@
                     <li class="lis commodity">商品推荐</li>
             </div>
         </div>
-        <div class="data">
-            <div class="data-list">
-                <div class="tex">
-                <p>
-                    <i></i>
-                    <a href="#">&nbsp;&nbsp;&nbsp;商品预告</a>
-                </p>
-                <div class="tex-list">
-                    <span class="lt">&lt;</span>
-                    <ul class="Ul">
-                        
-                    </ul>
-                    <span class="gt">&gt;</span>
-                </div>
-            </div>
-            </div>
-            <footer>
-                <div class="footer-cont">
-                    <ul class="footer_cont">
-
-                    </ul>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;昨日热销</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;新品好物</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;食品健康</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;餐厨烹饪</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;各妆美护</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;服饰珠宝</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;日用家居</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;家纺套件</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;数码家电</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                <div class="tuijian">
-                    <div class="tuijian_header">
-                        <span class="tuijian_l">
-                            <p>
-                                <i></i>
-                                <a href="#">&nbsp;&nbsp;&nbsp;家居建材</a>
-                            </p>
-                        </span>
-                        <span class="tuijian_r">
-                           <a href="#">换一批</a>
-                        </span>
-                       <ul class="tuijian_cont">
-
-                       </ul>
-                    </div>
-                </div>
-                       <div class="foot">
-                           <h2>END</h2>
-                           <div class="xian"></div>
-                       </div>
-            </footer>
+        <div id="shop">
+            
         </div>
         <div id="foot">
             <div class="foot_cont">
@@ -864,5 +679,7 @@
             </div>
         </div>
     </div>
+</body>
+</html>
 </body>
 </html>
