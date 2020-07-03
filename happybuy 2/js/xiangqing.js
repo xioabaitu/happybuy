@@ -184,28 +184,34 @@ $(()=>{$.ajax({
                        let abd=JSON.parse(localStorage.getItem("detailed"));
                         let abf=localStorage.getItem("num");
                         let shopid = abd.Id;
-                        console.log(shopid);
-                        
                         let detailed = JSON.stringify(abd);
                         let data = {
                             detailed,
                             num:abf,
                             shopid
                         }
-                        $.ajax({
-                            url:"./php/save.php",
-                            data,
-                            dataType: "json",
-                        }).done(data => {
-                            if (data.status == "success") {
-                                alert("加入成功!");
-                                location.href="login.html";
-                            } else {
-                                alert(data.msg);
-                            console.log(2)
-        
-                            }
-                        })
+                        
+                    let aa=$(".sign").text();
+                    let abc = localStorage.getItem("user");
+                        if(aa == String(abc)){
+                            $.ajax({
+                                url:"./php/save.php",
+                                data,
+                                dataType: "json",
+                            }).done(data => {
+                                if (data.status == "success") {
+                                    alert("加入成功!");
+                                    location.href = "happybuy.html";
+                                }else {
+                                    alert(data.msg);
+                                }
+                            })  
+                        }else{
+                            alert("加入失败，请先登录！")
+                            location.href= "login.html";
+                        }   
+                        
+                        
                         
                     })
                 }

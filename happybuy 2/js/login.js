@@ -29,7 +29,7 @@ $(()=>{
         if(password.test($("#pwd").val())){
             $(".mi").text("√");
         }else{
-            if($("#pwd").val().length==0){
+            if($("#pwd").val()){
             $(".mi").text("请输入密码");
             }else{
             $(".mi").text("密码格式不对");

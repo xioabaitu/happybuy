@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>快乐购-购物车</title>
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/lis.js"></script>
@@ -15,7 +14,7 @@
 </head>
 <body>
     <div id="bigbox">
-        <div class="help">
+        <!-- <div class="help">
             <div class="help-a">
                 <div class="help-top">
                     <div class="user">
@@ -62,7 +61,7 @@
                 <div class="help-bottom"></div>
             </div>
             </div>
-        </div>
+        </div> -->
         <div class="header">
             <div class="header-cont">
                 <div class="header-l">
@@ -110,14 +109,14 @@
                     </lable>
                     <span class="shop_name">商品</span>
                 </div>
-                <div class="t_price">单价</div>
-                <div class="t_num">数量</div>
-                <div class="t_sum">小计(元)</div>
-                <div class="t_action">操作</div>
+                <div class="column t_price">单价</div>
+                <div class="column t_num">数量</div>
+                <div class="column t_sum">小计(元)</div>
+                <div class="column t_action">操作</div>
             </div>
             <div class="shop_h2">
                 <span class="s_allgoods">
-                    <input type="checkbox">
+                    <input type="checkbox" id="ck">
                 </span>
                 <span class="shop_h2_zy">
                     <span>自营</span>
@@ -127,31 +126,34 @@
                     在线支付满129.00包邮
                 </div>
             </div>
-            <div>
-                <div>
-                    <label>
-                        <input type="cheakbox">
+            <div class="shop_count">
+
+            </div>
+            <div class="w1200">
+                <div class="del_all">
+                    <label class="cbox_djj">
+                        <input type="checkbox" id="chec">
                         <span>全选</span>
                     </label>
                 </div>
-                <div>
-                    <div>
+                <div class="fr">
+                    <div class="goods_num">
                         已选商品
                         <span>
-                            <em></em>
-                        </span>>
+                            <em class="NUM"></em>
+                        </span>
                         件
                     </div>
-                    <div>
-                        <p>
+                    <div class="goods_sum">
+                        <p class="sum_price">
                             商品总价（不含运费）
                             <span>
-                                ￥<em></em>
+                                ￥<em class="Sum_pir">0</em>
                             </span>
                         </p>
                     </div>
-                    <div>
-                        <a>结算</a>
+                    <div class="btn_buy">
+                        <a id="submit">结算</a>
                     </div>
                 </div>
             </div>

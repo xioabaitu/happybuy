@@ -2,3 +2,323 @@
 #top{
     border-bottom: 1px solid #e6e6e5;
 }
+#shopbuy{
+    width: 1200;
+    height: 643px;
+    margin: 0 auto;
+
+}
+.shop_tit{
+    margin-top: 20px;
+    border: 1px solid #dadada;
+    background-color: #efefef;
+    font-family: "宋体";
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.shop_cart{
+    float: left;
+    padding-left: 12px;
+    width: 550px;
+}
+.shop_djj{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+.shop_djj input{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.shop_djj span{
+    color: #000;
+    display: inline-block;
+    font-family: "宋体";
+    font-size: 12px;
+    line-height: 35px;
+    margin-left: 0 !important;
+    padding-left: 4px;
+}
+.shop_cart span{
+    margin-left: 100px;
+}
+.column{
+    float: left;
+    font-family: 宋体;
+    text-align: center;
+}
+.t_price{
+    width: 165px;
+    text-align: center;
+}
+.t_num{
+    width: 115px;
+    padding: 0 50px;
+}
+.t_sum{
+    float: left;
+    font-family: 宋体;
+    text-align: center;
+}
+.t_action{
+    float: left;
+    font-family: 宋体;
+    text-align: center;
+}
+.shop_h2 {
+    padding: 19px 0 10px 12px;
+    border-bottom: 2px solid #b2b2b2;
+    height: 16px;
+    width: 1190px;
+    margin: 0 auto;
+    line-height: 16px;
+}
+.s_allgoods{
+    float: left;
+}
+.s_allgoods input{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.shop_h2_zy{
+    background-color: #e60012;
+    padding: 0px 3px;
+    border-radius: 5px;
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+}
+.shop_h2 a{
+    color: #333333;
+    text-decoration: none;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.order_tips{
+    color: #333;
+    float: right;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 10px 0 0;
+}
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    padding: 0;
+    height: 60px;
+}
+.del_all{
+    float: left;
+    padding-left: 14px;
+    padding-top: 20px;
+}
+.cbox_djj{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.cbox_djj input{
+    width: 10px;
+    height: 10px;
+    outline: none;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.cbox_djj span{
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+.fr{
+    float: right !important;
+    display: inline;
+    margin-right: 52px;
+}
+.goods_num{
+    float: left;
+    width: 99px;
+    font-size: 13px;
+    color: #333;
+    line-height: 60px;
+}
+.goods_num span {
+    color: #c41f3a;
+    padding: 0 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.goods_sum {
+    color: #6b6b6b;
+    float: left;
+    line-height: 58px;
+}
+.sum_price {
+    color: #333;
+    font-size: 13px;
+    padding-right: 30px;
+}
+.sum_price span {
+    color: #93193e;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sum_price span em {
+    font-size: 18px;
+    color: #93193e;
+    font-weight: bold;
+}
+.btn_buy{
+    float: left;
+   
+}
+.btn_buy a{
+    background: #DF0010;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 110px;
+}
+.cart_item{
+    border: 1px solid #e5e5e5;
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.p_checkbox{
+    padding-top: 57px;
+    text-align: center;
+    width: 50px;
+}
+.cb_s_goods {
+    display: inline-block;
+    vertical-align: middle;
+}
+.p_img {
+    float: left;
+    width: 80px;
+    position: relative;
+    height: 80px;
+}
+.p_img img {
+    width: 100%;
+}
+.item_msg {
+    float: left;
+    margin-left: 20px;
+    width: 420px;
+}
+.p_name {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.p_name a {
+    color: #333;
+    font-size: 13px;
+}
+.discount_info {
+    margin-top: 5px;
+}
+.cell{
+    float: left;
+    padding: 18px 0 0 0;
+}
+.p_goods {
+    width: 523px;
+    margin-left: 20px;
+}
+.p_price {
+    width: 165px;
+    height: 100px;
+    margin-left: 25px;
+}
+.p_prices2 { 
+    line-height:90px;
+}
+.p_quantity {
+    padding-left: 15px;
+    width: 100px;
+    height: 100px;
+    /* padding-right: 50px; */  
+}
+.quantity_form {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+.quantity_form span {
+    background: #fff;
+    border:1px solid #e5e5e4;
+    color: #999;
+    display: block;
+    float: left;
+    font-size: 20px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    width: 21px;
+    font-weight: bold;
+}
+input[type="text"], input[type="password"], input.text, input.password {
+    font: 12px/20px Tahoma;
+    color: #777;
+    background-color: #FFF;
+    vertical-align: middle;
+    display: inline-block;
+    height: 19px;
+    padding: 2px 4px;
+    border: solid 1px #CCC;
+    outline: 0 none;
+}
+.itxt {
+    background-color: #fff;
+    border: 1px solid #e5e5e4;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    width: 40px;
+}
+.p_sum {
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.p_sum strong {
+    color: #c41f3a;
+    font-size: 16px;
+}
+
+.p_ops {
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    height: 76px;
+}
+.p_ops button{
+    border-radius: 50%;
+    width: 80px;
+    height: 40px;
+    border: 1px solid red;
+    box-shadow: 10px 10px 10px #ccc;
+    outline: none;
+}
