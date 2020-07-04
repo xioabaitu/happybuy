@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
 
-                // let abc=document.querySelectorAll(".vedio_text");
-                // let arr=[];
-                // abc.forEach(itm=>{
-
-                //     let abb=itm.querySelectorAll("span")
-                // abb.forEach(item=>{
-                //     arr.push(item.innerText)
-                // })
-                // })
-                // console.log(arr);
-                let abc = document.querySelectorAll(".a_con4_list")
+        let a = document.querySelectorAll(".groUlOut li");
+        let b = [];
+        a.forEach((item, idx) => {
+            b[idx] = {};
+            b[idx].src = item.querySelector("img").src;
+            b[idx].price = item.querySelector(".bigfont").innerText;
+            b[idx].title = item.querySelector(".pro_text span").innerText;
+        })
+        JSON.stringify(b);
     </script>
 
 </body>
+
 </html>

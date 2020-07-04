@@ -1,0 +1,31 @@
+@charset "utf-8";
+.tou{
+    width: 1100px;
+    min-height: 200px;
+    margin: 0 auto;
+}
+.shpi{
+    float: left;
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    box-shadow: 10px 10px 10px #ccc;
+}
+.shpi img{
+    display: block;
+    width: 246px;
+    height: 250px;
+}
+.shpi span{
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.shpi p{
+    display: block;
+    width: 200px;
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+    overflow:hidden;
+}

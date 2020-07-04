@@ -18,6 +18,13 @@ $(()=>{$.ajax({
             this.Num();
         }
         Creat(){
+
+            let aa=$(".sign").text();
+            let abc = localStorage.getItem("user");
+                if(aa == String(abc)){
+                    $(".register").click(()=>{
+                        history.go(0)
+                    })
             let str = "";
            for(let i=0;i<this.data.length;i++){
                let abb=JSON.parse(this.data[i].shoppe);
@@ -64,6 +71,9 @@ $(()=>{$.ajax({
             </div>`
             $(".shop_count").html(str);
         }
+    }else{
+        alert("请先登录");
+    }   
         }
         Fun(){
             let that=this;
@@ -116,14 +126,15 @@ $(()=>{$.ajax({
 
                 fn();
             })
-            $(".del").mousedown(()=>{
-                $(".del").css({
+            $(".del").mousedown(function(){
+                console.log(this);
+                $(this).css({
                     background:"red",
                     color:"white"
                 });                   
             });
-            $(".del").mouseup(()=>{
-                $(".del").css({
+            $(".del").mouseup(function(){
+                $(this).css({
                     background:"#fff",
                     color:"#000"
                 });                   
@@ -255,11 +266,15 @@ $(()=>{$.ajax({
 })
 function fn(){
     let num=0;
+    let nnm=0
     Array.from( $(".cart_item")).forEach(item => {
         if($(item).find(".cb_s_goods").is(":checked")){
             let abk = $(item).find(".item16190356_subtotal").text().slice(1)*1;
             num +=abk;
             $(".Sum_pir").text(num);
+            let abl = $(item).find(".itxt").val()*1;
+            nnm +=abl;
+            $(".NUM").text(nnm);
         }
     });
 }

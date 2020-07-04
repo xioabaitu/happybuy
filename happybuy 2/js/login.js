@@ -15,6 +15,7 @@ $(()=>{
             $(".sign").text("[登录]");
         $(".sign").attr("href","login.html");
         $(".register").text("[免费注册]");
+        history.go(0);
         })
     }
     }

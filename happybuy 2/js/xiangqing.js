@@ -22,6 +22,7 @@ $(()=>{$.ajax({
                this.addEvent();
                this.Inpu();
                this.Save();
+               this.NUM();
             }
             Creat(){
                 let that = this;
@@ -50,7 +51,7 @@ $(()=>{$.ajax({
             Xuan(){
                 let aaa=localStorage.getItem("detailed");
                 let abb = JSON.parse(aaa);
-                if(abb.pic !== null){
+                if(abb){
                     let str = `
                     <div id="bgbox">
                         <div class="box_L">
@@ -108,8 +109,11 @@ $(()=>{$.ajax({
                         that.out();
                     })
                     $(".box_L").mouseover(function(eve){
-                        let e = eve || window.event;
-                        that.move(e);
+                        // let e = eve || window.event;
+                        that.move(eve);
+                    })
+                    $(".help-bottom").click(()=>{
+                        $(window).scrollTop(0);
                     })
                 }
                 over(){
@@ -135,7 +139,7 @@ $(()=>{$.ajax({
                 }
                 move(e){
                     var l = e.pageX - this.Sbox.offsetLeft - this.span.offsetWidth/2;
-                    var t = e.pageY - 245 - this.span.offsetHeight/2;
+                    var t = e.pageY -245 - this.span.offsetHeight/2;
                     if(l<0) l=0;    
                     if(t<0) t=0;  
                     if(l > this.Sbox.offsetWidth - this.span.offsetWidth){
@@ -168,6 +172,25 @@ $(()=>{$.ajax({
                             localStorage.setItem("num",$("#shu").val());
                         })
                         localStorage.setItem("num",$("#shu").val());
+                        $(".commodity").click(()=>{
+                            location.href = "tuijian.html";
+                        })
+                        $(".selected").click(()=>{
+                            location.href = "happybuy.html";
+                        })
+                        $(".commodity").mousemove(function(){
+                            $(this).css({
+                                color:"red",
+                                "font-weight":"bolder",
+                                cursor: "pointer"
+                            })
+                        })
+                        $(".commodity").mouseleave(function(){
+                            $(this).css({
+                                color:"black",
+                                "font-weight":"normal",
+                            })
+                        })
                 }
                 Save(){
                     $("#buy").click(()=>{
@@ -213,6 +236,34 @@ $(()=>{$.ajax({
                         
                         
                         
+                    })
+                }
+                NUM(){
+                    let aa=$(".sign").text();
+            let abc = localStorage.getItem("user");
+                if(aa == String(abc)){
+                    $.ajax({
+                        type: "post",
+                        url: "./php/num.php",
+                        dataType: "json",
+                    }).done(data=>{
+                        let str=0;
+                        for(let i=0;i<data.length;i++){
+                            str += data[i].num*1;
+                            $(".num").text(str);
+                        }
+                        // history.go(0)
+                    })
+                }
+                    $(".buy").click(()=>{
+                        let aa=$(".sign").text();
+                        let abc = localStorage.getItem("user");
+                            if(aa == String(abc)){
+                               location.href="buy.html"
+                            }else{
+                                alert("请先登录");
+                                location.href="login.html";
+                            }   
                     })
                 }
             }

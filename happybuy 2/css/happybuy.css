@@ -51,8 +51,12 @@ img{
 }
 .help-bottom{
     position: absolute;
-    bottom: 0px;
+    bottom: -150px;
     left: 0;
+    width: 35px;
+    height: 40px;
+    border: 1px solid red;
+    line-height: 40px;
 }
 .user{
     position: relative;
@@ -365,7 +369,6 @@ img{
     width: 3px;
     height: 30px;
     background-color: black;
-    display: inline-block;
     margin-top: 12px;
 }
 .tex p a{
@@ -373,7 +376,6 @@ img{
     margin-right: 20px;
     display: block;
     height: 30px;
-    display: inline-block;
     line-height: 52px;
     font-weight: bolder;
     font-size: 24px;
@@ -480,6 +482,7 @@ img{
     left: 0;
 }
 #foot{
+    display: block;
     width: 1263px;
     min-height: 408px;
 
@@ -493,6 +496,8 @@ img{
 }
 .foot_li{
     float: left;
+    margin-right: 20px;
+    margin-left: 15px;
     width: 181px;
     text-align: center;
 }
@@ -658,7 +663,6 @@ img{
     width: 3px;
     height: 30px;
     background-color: black;
-    display: inline-block;
     margin-top: 12px;
 }
 .tuijian_l p a{
@@ -666,7 +670,6 @@ img{
     margin-right: 20px;
     display: block;
     height: 30px;
-    display: inline-block;
     line-height: 52px;
     font-weight: bolder;
     font-size: 24px;
@@ -780,7 +783,6 @@ img{
 .two_smallbox ul li{
     float: left;
     line-height: 40px;
-    /* text-align: center; */
     display: block;
     margin-left: 20px;
 }
@@ -799,14 +801,12 @@ img{
 .user .login{
     position: absolute;
     top: 0;
-    right: 45px;
+    right: 40px;
+    display: none;
     width: 250px;
     height: 260px;
     background: white;
     box-shadow: -10px 10px 10px #8c8c8c;
-}
-.login{
-    display: none;
 }
 .login-cont{
     width: 200px;
@@ -845,4 +845,22 @@ img{
     color: #8c8c8c;
     font-size: 14px;
     float: right;
+}
+.ul-2{
+    width: 1250px;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: none;
+}
+.ul-3{
+    width: 1130px;
+    height: 52px;
+    margin: 0 auto;
+}
+.ul-3 .oli{
+    border-right: .5px solid #e5e5e5;
+    color: #ccc;
 }

@@ -141,9 +141,25 @@ $(()=>{
             display:"block",
         })
     })
+    $(".user").mouseout(()=>{
+        $(".login").css({
+            display:"none",
+        })
+    })
     $(".login").mouseleave(()=>{
         $(".login").css({
             display:"none",
         })
     })
+    $(window).scroll(()=>{
+            if($(window).scrollTop()>=200){
+                $(".ul-2").css({
+            display:"block"
+        })
+            }else{
+                     $(".ul-2").css({
+                display:"none"
+            })
+            }
+        })
 })
