@@ -29,6 +29,7 @@
 .sp-1_p{
     width: 1100px;
     height: 326px;
+    position: relative;
 }
 .h2_top{
     font-size: 22px;
@@ -114,8 +115,8 @@
     height: 50px;
     border: 1px solid red;
     border-radius: 50%;
-    left: 40px;
-    top: 790px;
+    left: -60px;
+    top: 140px;
     display: block;
     font-size: 35px;
     text-align: center;
@@ -126,8 +127,8 @@
     height: 50px;
     border: 1px solid red;
     border-radius: 50%;
-    right: 20px;
-    top: 790px;
+    right: -60px;
+    top: 140px;
     display: block;
     font-size: 35px;
     text-align: center;
@@ -194,4 +195,72 @@
     width: 199px;
     height: 199px;
     margin: 10px auto;
+}
+.search_fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    height: 54px;
+    background: #F11323;
+    z-index: 49;
+    display: none;
+}
+.s_fixed_l {
+    float: left;
+    width: 120px;
+    padding-left: 18px;
+    padding-top: 9px;
+}
+.s_fixed_r {
+    float: left;
+    padding-top: 7px;
+    position: relative;
+    margin-left: 158px;
+}
+.txt_f_sb {
+    width: 445px;
+    border: 1px solid #fff;
+    height: 19px;
+    border-radius: 40px;
+    padding: 9px 0 9px 30px;
+    float: left;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #666666;
+}
+.s_fixed_r .iconsearch {
+    top: 17px;
+    left: 16px;
+}
+.iconsearch {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 13px;
+    color: #999;
+}
+.f_btn_search{
+    width: 90px;
+    border: none;
+    background: #F11323;
+    width: 90px;
+    padding-left: 10px;
+    height: 38px;
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    outline: none !important;
+}
+.search_list {
+    position: absolute;
+    left: 0;
+    top: 41px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    width: 810px;
+    outline: none;
+
 }

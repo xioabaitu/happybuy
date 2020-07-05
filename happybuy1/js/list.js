@@ -25,7 +25,7 @@ $(()=>{$.ajax({
                         <div class="pic"><img src="${item.src}"></div>
                         <p class="pj">${item.title1}</p>
                         <p class="js">${item.title2}</p>
-                        <span class="jg">${item.price1}</span>
+                        <span class="jg">￥${item.price1}</span>
                    </li>`
             });
             $(".footer_cont").html(str);
@@ -52,8 +52,7 @@ $(()=>{$.ajax({
             let abc = parseInt((Math.random()));
                 let abb = parseInt((Math.random()*10));
                     let stt="";
-                    let add = this.data.slice(abc,abb)
-                    console.log(add);
+                    let add = this.data.slice(abc,abb);
                    add.forEach(item =>{
                             stt +=`<li class="shop">
                                  <div class="pic"><img src="${item.src}"></div>
@@ -63,9 +62,6 @@ $(()=>{$.ajax({
                             <li>`;
                     })
             $(".tuijian_cont").html(stt);
-            $("#mian").click(()=>{
-                location.href="liebiaoye.html"; 
-            })
         }
         Tips(){
            let oli = document.querySelector(".tishi").children;

@@ -14,6 +14,7 @@ $(()=>{
         Init(){
             this.Creat();
             this.Fun();
+            this.Btn();
         }
         Creat(){
             let str= "";
@@ -47,6 +48,35 @@ $(()=>{
                 bg.onclick = function(){
                 bte.style.left = bte.offsetLeft +1380+ "px";
             }
+            $(window).scroll(()=>{
+                    if($(window).scrollTop()>=200){
+                        $(".search_fixed").css({display:"block"})
+                    }else{
+                        $(".search_fixed").css({display:"none"})
+                    }
+                })
+        }
+        Btn(){
+            let that = this;
+            let str={};
+            let abc = $(".sp-1_cont-3").children(".once");
+            Array.from(abc).forEach(item => { 
+                        item.onclick = function(){
+                            console.log(this)
+                           that.pj = this.querySelector(".once-2").innerText;
+                           that.js = this.querySelector(".once-2").innerText;
+                          that.pic=this.querySelector(".once-1 img").src;
+                          that.jg=this.querySelector(".once-3").innerText;
+                          that.Id = $(this).attr("data-id");
+                          str.Id = that.Id;
+                          str.pj = that.pj;
+                          str.js = that.js;
+                          str.pic = that.pic;
+                          str.jg = that.jg;
+                          localStorage.setItem("detailed",JSON.stringify(str));
+                        location.href="./detailed.html";
+                    }
+                });
         }
     }
 })

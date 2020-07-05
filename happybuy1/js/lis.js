@@ -162,4 +162,22 @@ $(()=>{
             })
             }
         })
+    $("#mian").click(()=>{
+            location.href="liebiaoye.html"; 
+        });
+        let abg=$(".two_smallbox li").children("a");
+      Array.from(abg).forEach(item => {
+            $(item).mousemove(function(){
+            $(this).css({
+                color:"red"
+            })
+        })
+        $(item).mouseleave(function(){
+            $(this).css({
+                color:"#666"
+            })
+        })
+       });
+        
+       
 })

@@ -109,7 +109,6 @@ $(()=>{$.ajax({
                         that.out();
                     })
                     $(".box_L").mouseover(function(eve){
-                        // let e = eve || window.event;
                         that.move(eve);
                     })
                     $(".help-bottom").click(()=>{
@@ -124,12 +123,8 @@ $(()=>{$.ajax({
                     this.Bimg = document.querySelector(".b_box img");
                     this.span.style.display = "block";
                     this.Bbox.style.display = "block";
-        
-                    // span宽高比例：根据右侧大图和显示区域计算得来
                     var spanW = this.Bimg.offsetWidth / this.Bbox.offsetWidth;
                     var spanH = this.Bimg.offsetHeight / this.Bbox.offsetHeight;
-                    // console.log(spanW,spanH)
-                    // 根据宽高比例，设置span的真正宽高
                     this.span.style.width = this.Sbox.offsetWidth / spanW + "px";
                     this.span.style.height = this.Sbox.offsetHeight / spanH + "px";
                 }
@@ -156,11 +151,11 @@ $(()=>{$.ajax({
                     this.Bimg.style.top =  y * (this.Bbox.offsetHeight - this.Bimg.offsetHeight) + "px";
                 }
                 Inpu(){
-                    let ab=1;
+                    let ab=0;
                     $("#shu").val(ab);
                     $(".jian").click(()=>{
-                        if(ab<0){
-                            ab=0;
+                        if(ab<1){
+                            ab=1;
                         }else{
                             $("#shu").val(ab--);
                     localStorage.setItem("num",$("#shu").val());

@@ -4,7 +4,7 @@
 }
 #shopbuy{
     width: 1200;
-    height: 643px;
+    min-height: 643px;
     margin: 0 auto;
 
 }

@@ -78,6 +78,7 @@ img{
     color: #fff;
 }
 .buy{
+    position: relative;
     margin: 5px 0;
     cursor: pointer;
 }
@@ -138,10 +139,8 @@ img{
     color: #333;
 }
 .header-r{
-    /* width: 700px; */
     height: 100%;
     float: right;
-    /* background-color: rebeccapurple; */
 }
 .list{
     width: 100%;
@@ -282,11 +281,54 @@ img{
     padding: 0 5px 0 0;
     color: #8c8c8c;
 }
+#buy img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.buy i{
+    width: 30px;
+    height: 37px;
+    display: block;
+}
+.buy:hover{
+    background-color: red;
+}
+.help-bottom:active{
+    background-color: red;
+
+}
+.buycar a:active{
+    background-color: red;
+}
+.user-e{
+    height: 100px;
+    text-align: center;
+}
+.user-e span{
+    display: block;
+    margin-left: 10px;
+    width:20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: red;
+}
+.buy img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 3px;
+    top: 0;
+}
 .buycar{
     float: right;
     position: relative;
     margin-top: 19px;
-    z-index: 3;
+    /* z-index: 3; */
 }
 .buycar a{
     display: block;
@@ -294,7 +336,6 @@ img{
     width: 121px;
     border-radius: 39px;
     height: 39px;
-    text-align: center;
     line-height: 39px;
     background-color: #fff;
     position: relative;
@@ -304,6 +345,7 @@ img{
 .buycar a span{
     color: #222;
     font-size: 15px;
+    padding-left: 50px;
 }
 .lis{
     width: 1278px;
