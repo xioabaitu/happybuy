@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品详情页</title>
+    <title>面膜</title>
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/md5.js"></script>
     <script src="./js/lis.js"></script>
     <script src="./js/login.js"></script>
-    <script src="./js/xiangqing.js"></script>
-    <link rel="stylesheet" href="./icon/iconfont.css">
+    <script src="./js/liebiaoye.js"></script>
+    <!-- <script src="./js/xiangqing.js"></script> -->
     <link rel="stylesheet" href="./css/happybuy.css">
-    <link rel="stylesheet" href="./css/detailed.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="./css/liebiaoye.css">
 </head>
 <body>
     <div id="bigbox">
@@ -44,6 +45,7 @@
                     </div>
                     <div class="buy">
                         <a >
+                            <i><img src="./img/购物车.png" alt=""></i>
                             <div class="use-a">购物车</div>
                             <div class="num">0</div>
                         </a>
@@ -53,9 +55,10 @@
                         </div>
                     </div>
                     <div class="Collect">
-                        <div class="user">
+                        <div class="user-e">
                             <a >
                             <div class="use">收藏</div>
+                            <span>0</span>
                         </a>
                     </div>
                 </div>
@@ -74,17 +77,17 @@
                 </div>
                 <div class="header-r">
                     <ul class="list">
-                        <li><a >合作招商</a></li>
-                        <li><a >订单查询</a></li>
-                        <li><a >我的快乐购</a></li>
-                        <li><a >下载快乐购app</a></li>
+                        <li><a>合作招商</a></li>
+                        <li><a>订单查询</a></li>
+                        <li><a>我的快乐购</a></li>
+                        <li><a>下载快乐购app</a></li>
                         <li class="list-d"><a >客服中心</a>
                             <ul class="list-ul">
-                                <li><a >帮助中心</a></li>
-                                <li><a >会员反馈</a></li>
+                                <li><a>帮助中心</a></li>
+                                <li><a>会员反馈</a></li>
                             </ul>
                         </li>
-                        <li><a >400-705-1111</a></li>
+                        <li><a>400-705-1111</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,7 +95,7 @@
         <div id="top">
             <div class="top-cont">
                 <div class="logo">
-                    <a href="happybuy.html" class="CLea">
+                    <a href="happybuy.html">
                         <img src="https://ecimg.happigo.com/resource/web/new_web/images/logo.png" alt="">
                     </a>
                 </div>
@@ -104,7 +107,7 @@
                             <button>搜索</button>
                         </form>
                         <div class="tishi">
-                            <a >
+                            <a>
                                 <span>梦洁牛皮席</span>
                             </a>
                             <a >
@@ -133,8 +136,10 @@
 
                 </div>
                 <div class="buycar">
-                   <a >
-                       <span class="iconfont icon-gongjiaokeche" id="buy">购物车</span>
+                   <a>
+                       <span id="buy">
+                            <img src="./img/购物车.png" alt="">   
+                        购物车</span>
                    </a>
                 </div>
             </div>
@@ -149,7 +154,7 @@
                                     <li class="two_smallbox">
                                         <ul>
                                         <h3>面部护理 ></h3>
-                                        <li><a >面膜</a></li>
+                                        <li><a id="mma">面膜</a></li>
                                         <li><a >乳液面霜</a></li>
                                         <li><a >精华</a></li>
                                         <li><a >护肤套组</a></li>
@@ -537,7 +542,8 @@
             </div>
         </div>
         <div id="shop">
-            
+            <div class="tou">
+            </div>
         </div>
         <div id="foot">
             <div class="foot_cont">

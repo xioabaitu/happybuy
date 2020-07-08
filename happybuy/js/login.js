@@ -47,6 +47,7 @@ $(()=>{
             data: `phone=${phone}&password=${md5(password).slice(0,15)}`
         }).done(data => {
             if (data.status == "success") {
+                console.log(data);
                 alert(data.msg);
                 localStorage.setItem("user",phone);
                 let abc = localStorage.getItem("user");

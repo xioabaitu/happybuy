@@ -5,7 +5,6 @@
      $shopid = $_REQUEST["shopid"]; 
      $sql = "SELECT * FROM `buy` WHERE shopid = '$shopid'";
      $r = mysqli_query($db,$sql);
- 
      $nu = mysqli_num_rows($r);
      if($nu==1){
          $num++;

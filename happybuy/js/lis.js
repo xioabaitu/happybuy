@@ -162,8 +162,9 @@ $(()=>{
             })
             }
         })
-    $("#mian").click(()=>{
-            location.href="liebiaoye.html"; 
+    $("#mma").click(()=>{
+        let date = Date.now();
+            location.href="liebiaoye.html?+'date'"; 
         });
         let abg=$(".two_smallbox li").children("a");
       Array.from(abg).forEach(item => {

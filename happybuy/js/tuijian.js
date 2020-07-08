@@ -18,9 +18,9 @@ $(()=>{
         }
         Creat(){
             let str= "";
-            this.data.forEach(item => {
+            this.data.forEach((item,idx) => {
                 str +=`
-                    <li class="once">
+                    <li class="once" data-id="${idx}">
                         <div class="once-1">
                             <img src="${item.src}">
                         </div>
@@ -31,7 +31,7 @@ $(()=>{
                         </span>
                     </li>`
                     $(".sp-1_cont-1").html(str);
-                    $(".sp-1_cont-3").html(str);
+                    $(".sp-1_cont_3").html(str);
             });
         }
         Fun(){
@@ -55,6 +55,10 @@ $(()=>{
                         $(".search_fixed").css({display:"none"})
                     }
                 })
+                $(".selected").click(()=>{
+                    let abd = Date.now();
+                    location.href = "happybuy.html?+'abd'";
+                })
         }
         Btn(){
             let that = this;
@@ -62,7 +66,6 @@ $(()=>{
             let abc = $(".sp-1_cont-3").children(".once");
             Array.from(abc).forEach(item => { 
                         item.onclick = function(){
-                            console.log(this)
                            that.pj = this.querySelector(".once-2").innerText;
                            that.js = this.querySelector(".once-2").innerText;
                           that.pic=this.querySelector(".once-1 img").src;
@@ -74,7 +77,8 @@ $(()=>{
                           str.pic = that.pic;
                           str.jg = that.jg;
                           localStorage.setItem("detailed",JSON.stringify(str));
-                        location.href="./detailed.html";
+                          let abc = Date.now();
+                        location.href="./detailed.html?+'abc'";
                     }
                 });
         }

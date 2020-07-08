@@ -1,7 +1,7 @@
 <?php
+include_once "./lianjie.php";
 $phone = $_REQUEST["phone"];
 $password = $_REQUEST["password"];
-include_once "./lianjie.php";
 
 $sql = "SELECT * FROM `user` WHERE phone = '$phone'";
 

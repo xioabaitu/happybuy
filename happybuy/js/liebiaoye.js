@@ -17,7 +17,6 @@ $(()=>{
         }
         Creat(){
             let abc="";
-            console.log(this.data)
             this.data.forEach(item => {
                 abc +=`<div class="shpi" data_id=${item.id}>
                         <img src="${item.src}">
@@ -38,6 +37,11 @@ $(()=>{
                     })
                 
                 })
+                $(".commodity").click(()=>{
+                    let date =Date.now();
+                    console.log(date);
+                    location.href = "tuijian.html?+'date'";
+                })
             }
             Fun(){
                 let that = this;
@@ -49,12 +53,13 @@ $(()=>{
                                that.js = this.querySelector(".shpi p").innerText;
                               that.pic=this.querySelector(".shpi img").src;
                               that.jg=this.querySelector(".shpi span").innerText;
-                              that.Id = $(this).attr("data-id");
+                              that.Id = $(this).attr("data_id");
                               str.Id = that.Id;
                               str.pj = that.pj;
                               str.js = that.js;
                               str.pic = that.pic;
                               str.jg = that.jg;
+                              console.log(str)
                               localStorage.setItem("detailed",JSON.stringify(str));
                             location.href="./detailed.html";
                         }

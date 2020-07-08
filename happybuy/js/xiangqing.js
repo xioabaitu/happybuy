@@ -53,7 +53,7 @@ $(()=>{$.ajax({
                 let abb = JSON.parse(aaa);
                 if(abb){
                     let str = `
-                    <div id="bgbox">
+                    <div id="bgbox" data-id=${abb.id}>
                         <div class="box_L">
                             <img src="${abb.pic}">
                             <span></span>
@@ -151,7 +151,7 @@ $(()=>{$.ajax({
                     this.Bimg.style.top =  y * (this.Bbox.offsetHeight - this.Bimg.offsetHeight) + "px";
                 }
                 Inpu(){
-                    let ab=0;
+                    let ab=1;
                     $("#shu").val(ab);
                     $(".jian").click(()=>{
                         if(ab<1){
@@ -168,7 +168,9 @@ $(()=>{$.ajax({
                         })
                         localStorage.setItem("num",$("#shu").val());
                         $(".commodity").click(()=>{
-                            location.href = "tuijian.html";
+                            let date =Date.now();
+                            console.log(date);
+                            location.href = "tuijian.html?+'date'";
                         })
                         $(".selected").click(()=>{
                             location.href = "happybuy.html";
@@ -208,7 +210,6 @@ $(()=>{$.ajax({
                             num:abf,
                             shopid
                         }
-                        
                     let aa=$(".sign").text();
                     let abc = localStorage.getItem("user");
                         if(aa == String(abc)){
@@ -227,10 +228,7 @@ $(()=>{$.ajax({
                         }else{
                             alert("加入失败，请先登录！")
                             location.href= "login.html";
-                        }   
-                        
-                        
-                        
+                        }  
                     })
                 }
                 NUM(){

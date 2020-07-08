@@ -18,12 +18,14 @@ $(()=>{
     });
     let phone = /^1[3-9]\d{9}$/;
     let password = /^[a-zA-Z0-9]{3,6}$/;
-    $("input").blur(()=>{
+    $("#phone").blur(()=>{
         if(phone.test($("#phone").val())){
             $(".ph").text("√");
         }else{
             $(".ph").text("请输入11位的手机号");
         }
+    })
+    $("#pwd").change(()=>{
         if(password.test($("#pwd").val())){
             $(".mi").text("√");
         }else{
@@ -33,6 +35,8 @@ $(()=>{
             $(".mi").text("密码格式不对");
         }
         }
+    })
+    $("#pdw").change(()=>{
         let ab=$("#pdw").val();
         let ac = $("#pwd").val();
         if(ac.length>0){
@@ -44,6 +48,8 @@ $(()=>{
         }else{
             $(".ag").text("");           
         }
+    })
+    $("#verification").blur(()=>{
         if($("#verification").val().length>0){
             if( $("#verification").val() == imgCode){
                 $(".yz").text("√");
